@@ -13,9 +13,9 @@ dnl [  --with-ocqprint             Include ocqprint support])
 
 dnl Otherwise use enable:
 
-dnl PHP_ARG_ENABLE(ocqprint, whether to enable ocqprint support,
 dnl Make sure that the comment is aligned:
-dnl [  --enable-ocqprint           Enable ocqprint support])
+PHP_ARG_ENABLE(ocqprint, whether to enable ocqprint support,
+[  --enable-ocqprint           Enable ocqprint support])
 
 if test "$PHP_OCQPRINT" != "no"; then
   dnl Write more examples of tests here...
@@ -45,7 +45,7 @@ if test "$PHP_OCQPRINT" != "no"; then
 
   dnl # --with-ocqprint -> check for lib and symbol presence
   dnl LIBNAME=ocqprint # you may want to change this
-  dnl LIBSYMBOL=ocqprint # you most likely want to change this 
+  dnl LIBSYMBOL=ocqprint # you most likely want to change this
 
   dnl PHP_CHECK_LIBRARY($LIBNAME,$LIBSYMBOL,
   dnl [
